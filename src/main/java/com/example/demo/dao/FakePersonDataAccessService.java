@@ -8,7 +8,6 @@ public class FakePersonDataAccessService implements PersonDao {
 
     @Override
     public int insertPerson(UUID id, Person person) {
-        // TODO Auto-generated method stub
         return 0;
     }
     
