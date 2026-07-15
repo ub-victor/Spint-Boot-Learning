@@ -9,6 +9,6 @@ public interface PersonDao {
 
     default int addPerson(Person person){
         UUID id = UUID.randomUUID();
-        return  insertPerson(id, person); 
+        return  insertPerson(id, person); // the addPerson, return the generated id, with the getname
     }
 }
