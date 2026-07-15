@@ -5,10 +5,10 @@ import com.example.demo.model.Person;
 import java.util.UUID;
 
 public interface PersonDao {
-    int insertPerson(UUID id, Person person);
+    int insertPerson(UUID id, Person person);// Here  we have the id, with id= null and person name
 
     default int addPerson(Person person){
         UUID id = UUID.randomUUID();
-        return  insertPerson(id, person);
+        return  insertPerson(id, person); 
     }
 }
